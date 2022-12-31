@@ -23,10 +23,6 @@ export const DisplayData = ({ data }) => {
     }
   });
 
-  if (data) {
-    setResult(data);
-  }
-
   return (
     <>
       <CSVDownloader
@@ -35,7 +31,7 @@ export const DisplayData = ({ data }) => {
         config={{
           delimiter: ";",
         }}
-        data={result}
+        data={data}
       >
         <Button mt={"10px"} w={"full"} colorScheme={"blue"}>
           Download Result With Calculated Tax
