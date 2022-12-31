@@ -6,7 +6,7 @@ export const postData = (payload) => (dispatch) => {
   return axios
     .post(`https://tekmentors-assignment-2.onrender.com/invoices`, payload)
     .then((res) => {
-      console.log(res);
+      // console.log(res);
       return dispatch({
         type: types.POST_TAX_DATA_SUCCESS,
         payload: res.data,
